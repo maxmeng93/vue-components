@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ElSelectBigdata from '@/components/ElSelectBigdata';
+import ElSelectBigdata from './index';
 
 export default {
   components: {

@@ -103,6 +103,7 @@ export default {
 .operation {
   text-align: right;
 }
+
 .operation > span {
   color: #1890ff;
   cursor: pointer;

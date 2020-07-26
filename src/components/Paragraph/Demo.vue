@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Paragraph from '@/components/Paragraph';
+import Paragraph from './index';
 
 export default {
   name: 'demo2',
