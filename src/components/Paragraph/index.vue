@@ -5,7 +5,7 @@
     </div>
     <div class="operation" v-if="isOutRange && expandable">
       <span @click="isCollapse = !isCollapse">
-        {{ isCollapse ? "展开" : "折叠" }}
+        {{ isCollapse ? '展开' : '折叠' }}
       </span>
     </div>
   </div>
@@ -13,12 +13,12 @@
 
 <script>
 export default {
-  name: "Paragraph",
+  name: 'Paragraph',
   props: {
     // 文本内容
     text: {
       type: String,
-      default: "",
+      default: '',
     },
     // 最大显示行数
     rows: {
@@ -44,12 +44,12 @@ export default {
     hasOutRange() {
       const rows = this.rows;
 
-      const originEle = this.$refs["paragraph"];
+      const originEle = this.$refs['paragraph'];
       const originStyle = window.getComputedStyle(originEle);
       const lineHeight = this.pxToNumber(originStyle.lineHeight);
       const offsetHeight = originEle.offsetHeight;
       const maxHeight = Math.round(
-        lineHeight * rows + this.pxToNumber(originStyle.paddingTop)
+        lineHeight * rows + this.pxToNumber(originStyle.paddingTop),
       );
 
       if (offsetHeight > maxHeight) {

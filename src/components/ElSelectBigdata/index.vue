@@ -34,11 +34,11 @@ export default {
     filterField: {
       type: String,
       default: 'label',
-    }
+    },
   },
   data() {
     return {
-      value: "",
+      value: '',
       list: [],
     };
   },
@@ -69,17 +69,17 @@ export default {
     },
   },
   directives: {
-    "load-bigdata": {
+    'load-bigdata': {
       bind(el, binding) {
         // 获取element-ui定义好的scroll盒子
         const S_DOM = el.querySelector(
-          ".el-select-dropdown .el-select-dropdown__wrap"
+          '.el-select-dropdown .el-select-dropdown__wrap',
         );
         const {
           value: { dist, callback },
         } = binding;
 
-        S_DOM.addEventListener("scroll", function() {
+        S_DOM.addEventListener('scroll', function() {
           /**
            * scrollHeight 获取元素内容高度(只读)
            * scrollTop 获取或者设置元素的偏移值,常用于, 计算滚动条的位置, 当一个元素的容器没有产生垂直方向的滚动条, 那它的scrollTop的值默认为0.

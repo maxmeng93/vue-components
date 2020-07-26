@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ElSelectBigdata from "@/components/ElSelectBigdata";
+import ElSelectBigdata from '@/components/ElSelectBigdata';
 
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      value: "",
+      value: '',
       bigdata: [],
     };
   },

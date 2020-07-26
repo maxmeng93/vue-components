@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Paragraph from "@/components/Paragraph";
+import Paragraph from '@/components/Paragraph';
 
 export default {
-  name: "demo2",
+  name: 'demo2',
   components: {
     Paragraph,
   },
